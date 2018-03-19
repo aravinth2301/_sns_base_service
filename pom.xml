@@ -16,7 +16,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<finalName.prefix>myApp</finalName.prefix>
-		<finalBuildPath>/Users/ArA/Desktop/temp/maven</finalBuildPath>
+		<finalBuildPath>${project.build.directory}</finalBuildPath>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
