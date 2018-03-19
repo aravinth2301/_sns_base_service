@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+	<!-- 	<link type="text/css" rel="stylesheet" href="/css/login.css" /> -->
+	<link
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" href="/css/animate.css" />
+	<link type="text/css" rel="stylesheet" href="/css/app.css" />
+</h:head>
+<body>
+
+	<ui:insert name="header">
+		<ui:include src="../pages/templates/header.xhtml" />
+	</ui:insert>
+
+
+	<div >
+		<h1 class="animated rollIn">#{jsfBean.welcomeMessage}</h1>
+		
+	
+	</div>
+	<ui:insert name="footer">
+		<ui:include src="../pages/templates/footer.xhtml" />
+	</ui:insert>
+</body>
+</html>

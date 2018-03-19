@@ -1,0 +1,13 @@
+spring:
+  profiles: prod
+admin:
+  hibernate:
+    connection:
+      dialect: org.hibernate.dialect.MySQLDialect
+      url: jdbc:mysql://localhost:3306/springBootProduction
+      username: root
+      password: root
+      driver: com.mysql.jdbc.Driver
+    hbm2ddl:
+      auto: update
+    show_sql: true

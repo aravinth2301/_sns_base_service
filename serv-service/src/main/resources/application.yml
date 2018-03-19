@@ -1,0 +1,28 @@
+server:
+  port: 9002
+logging:
+  level:
+    org.springframework.web: ERROR
+    lk.inova: DEBUG
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+    file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'
+  file: /application.log
+
+spring:
+  application:
+    name: business-service
+
+eureka:
+  client:
+    serviceUrl:
+     defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8888}/eureka/      
+#eureka:
+#  client:
+#    serviceUrl:
+#     defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8888}/eureka/
+#  instance:
+#   metadataMap:
+#      instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+#    hostname: rest-host
+#    nonSecurePort: 9000

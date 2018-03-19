@@ -1,0 +1,19 @@
+server:
+  port: 8888
+#server:
+#  ssl:
+#    enabled: true
+    
+
+eureka:
+  instance:
+    hostname: localhost
+  client:  # Not a client, don't register with yourself
+    registerWithEureka: false
+    fetchRegistry: false
+
+    
+logging:
+  level:
+    com.netflix.discovery: off
+    com.netflix.eureka: off

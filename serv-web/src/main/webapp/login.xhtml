@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+<ui:include src="common/headerlinks.xhtml"></ui:include>
+</h:head>
+
+<h:body class="fixed-header dashboard">
+
+
+
+<body class="fixed-header ">
+<div class="login-wrapper ">
+
+<div class="bg-pic">
+
+<img src="assets/img/demo/new-york-city-buildings-sunrise-morning-hd-wallpaper.jpg" data-src="assets/img/demo/new-york-city-buildings-sunrise-morning-hd-wallpaper.jpg" data-src-retina="assets/img/demo/new-york-city-buildings-sunrise-morning-hd-wallpaper.jpg" alt="" class="lazy"></img>
+
+<div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">
+<h2 class="semi-bold text-white">
+Pages make it easy to enjoy what matters the most in the life</h2>
+<p class="small">
+images Displayed are solely for representation purposes only, All work copyright of respective
+owner, otherwise © 2013-2014 REVOX.
+</p>
+</div>
+</div>
+<div class="login-container bg-white">
+<div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
+<div style="text-align: center;">
+<img id="sllogo"  src="images/gov_logo1.png" ></img><br/>
+<h:outputText style="font-size: 20px;"  value="Department of Examination - Sri Lanka"></h:outputText>
+</div>
+<p class="p-t-35">Sign into your pages account</p>
+<h:form id="form-login" class="p-t-15" role="form" >
+<h:message styleClass="textRed" for="userlogin"></h:message>
+<div class="form-group form-group-default">
+<label>Login</label>
+<div class="controls">
+<h:inputText id="userlogin" value=""  a:placeholder="Enter User Name" required="true" requiredMessage="Value is required"  ></h:inputText>
+</div>
+</div>
+<h:message styleClass="textRed" for="pwlogin"></h:message>
+<div class="form-group form-group-default">
+<label>Password</label>
+<div class="controls">
+<h:inputText id="pwlogin" value="" required="true" requiredMessage="Value is required"  a:placeholder="Enter Password"></h:inputText>
+</div>
+</div>
+<h:commandButton styleClass="btn btn-primary btn-cons m-t-10" value="Submit"></h:commandButton>
+</h:form>
+</div>
+</div>
+</div>
+</body>
+
+<ui:include src="common/jslinks.xhtml"></ui:include>
+</h:body>
+</html>

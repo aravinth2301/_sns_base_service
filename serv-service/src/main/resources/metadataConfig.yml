@@ -1,0 +1,30 @@
+metadata:
+  roleAdmin:
+    code: Admin
+    name: Admin Role
+  listMetaZoneRoles:
+    - code: R1
+      name: Test Parent Role
+      metaData: true
+      status: 1
+    - code: R2
+      name: Test Child Role
+      metaData: true
+      status: 1
+  listMetaZoneRolesPermission:
+    - role:
+        code: R1
+        name: Test Parent Role
+        metaData: true
+        status: 1
+      listPermission:
+        - code: ADD_ROLE
+        - code: EDIT_ROLE
+    - role:
+        code: R2
+        name: Test Child Role
+        metaData: true
+        status: 1
+      listPermission:
+        - code: ADD_ROLE
+        - code: EDIT_ROLE

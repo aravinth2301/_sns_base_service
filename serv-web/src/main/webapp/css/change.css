@@ -1,0 +1,39 @@
+
+
+
+#sllogo{
+width:40px;
+}
+
+#logoText{
+font-weight: 500;  
+font-size: 25px; 
+margin-left: 10px; 
+line-height: 80%;
+}
+
+
+[id$="login"]{
+border: 0px;
+width: 100%;
+}
+
+[id$="login"]:focus{
+background-color: #f0f0f0 !important;;
+}
+
+.textRed{
+color:red;
+}
+
+
+
+@media screen and (max-width: 768px) {
+ #sllogo{
+	width:20px;
+ }
+
+ #logoText{  
+	 font-size:15px;
+	}
+}
